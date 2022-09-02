@@ -11,26 +11,48 @@
 <body>
     <header>
 
-
+        <!-- Navigation  -->
         <nav>
             <ul>
-            <li><a href="gallery.html">Galleri</a></li>
-            <li><a href="landscape.html">Landskap</a></li>
-            <li><a href="index.html">Om mig</a></li> 
-             
-              
-        </ul>
+                <li><a href="gallery.html">Galleri</a></li>
+                <li><a href="landscape.html">Landskap</a></li>
+                <li><a href="index.html">Om mig</a></li>
+
+
+            </ul>
+            <hr>
+            <a href="event.html">Ladda om sidan</a>
         </nav>
     </header>
 
+    <!-- form to sign upp for a guided tour. I am aware that <push> should be used instead of <get> but i use <get> for convinience -->
 
     <h1>Evenemang</h1>
 
-    <form action="event.html">
-        <label for="firstname">
-            <input type="text" name="firstname" id="firstname"> Förnamn
+    <form action="event.html" method="get">
 
-        </label>
+        <fieldset>
+            <legend>
+                Anmäl dig till en guidad tur till toppen av Kebenekaise
+            </legend>
+            <p>
+                <label>
+                    Ditt förnamn: <br> <input type="text" name="firstName" id="firstName">
+
+                </label>
+            </p>
+
+
+            <p>
+                <label>
+                    Ditt efternamn: <br> <input type="text" name="lastName" id="lastName">
+
+                </label>
+            </p>
+
+            <input type="submit" value="Skicka">
+
+        </fieldset>
     </form>
 
     <hr>
