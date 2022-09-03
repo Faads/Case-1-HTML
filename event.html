@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evenemang</title>
+    <title>Guidad tur</title>
 </head>
 
 <body>
@@ -27,17 +27,17 @@
 
     <!-- form to sign upp for a guided tour. I am aware that <push> should be used instead of <get> but i use <get> for convinience -->
 
-    <h1>Evenemang</h1>
+    <h1>Guidad tur</h1>
 
-    <form action="event.html" method="get">
+    <form action="form.html" method="get">
 
         <fieldset>
             <legend>
-                Anmäl dig till en guidad tur till toppen av Kebenekaise
+                Ange kontaktuppgifter
             </legend>
             <p>
                 <label>
-                    Ditt förnamn: <br> <input type="text" name="firstName" id="firstName">
+                    Förnamn: <br> <input type="text" name="firstName" id="firstName" required minlength="3" maxlength="20">
 
                 </label>
             </p>
@@ -45,15 +45,46 @@
 
             <p>
                 <label>
-                    Ditt efternamn: <br> <input type="text" name="lastName" id="lastName">
+                    Efternamn: <br> <input type="text" name="lastName" id="lastName" required minlength="3" maxlength="20">
 
                 </label>
             </p>
 
-            <input type="submit" value="Skicka">
+            <p>
+                <label>
+                    e-mail: <br> <input type="email" name="eMail" id="eMail" required="@" minlength="5" maxlength="20">
+
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Telefon nummer: <br> <input type="tel" name="tel" id="tel"required minlength="19" maxlength="10">
+                </label>
+            </p>
+
+            <p>
+                <label>
+                   Address: <br> <input type="text" name="adress" id="address" required minlength="4" maxlength="15">
+                </label>
+            </p>
+
+            
+
+
+            <p>
+                <label for="info">Trycket är högt - berätta kort nedan varför just du vill bestiga Kebnekaise:</label>
+            </p>
+            <textarea name="info" id="info" cols="30" rows="10" minlength="10" maxlength="100" required></textarea>
+            <p>
+                <input type="submit" value="Nästa">
+            </p>
 
         </fieldset>
     </form>
+
+    <!-- textarea - to sign upp for our popular guided tour! -->
+  
 
     <hr>
     <footer>
@@ -68,7 +99,6 @@
                     &copy; En sida av Robin Surell | @Faads
             </figcaption>
         </figure>
-
     </footer>
 
 </body>
