@@ -20,25 +20,55 @@
     <ul>
         <li>steps
             <ol>
-                <li>Navigate using a terminal to the folder u would like to iniate git.</li>
+                <li>Navigate using a terminal to the folder u would like to iniate git. u navigated using
+                    <code>cd</code> it stands for (change directoy)
+                </li>
                 <li>Type <code>git init</code> This will initialize git in the folder u are currently located.</li>
-                <li>Create a file using <code>touch</code> followed buy a name exampel: <code>touch test.txt</code> This will create an empty text file.</li>
+                <li>Create a file using <code>touch</code> followed buy a file name exampel: <code>touch test.txt</code> This
+                    will create an empty text file named "test.txt" that we will use to push to github.</li>
+                <li>Now you need to go to github and open the repository you created and copy the link showcased below.
+                    The link will look different for everyone but it should look simular to mine</li>
+                    <li>Type <code>git add </code> followed buy your file name (press tab to autocomplete text) and press enter. Then type <code>git status</code> to check the current status of your file and it should look like this.</li>
             </ol>
         </li>
     </ul>
 
     <figure>
-        <figcaption>step 1. It should look something like this. if u are unsure if u are in the right folder type: <code>pwd</code> it stands
-            for (print working directory) it will show you were u are currently located</figcaption>
-            <img src="images/gitStep1.png" alt="" width="400">
+        <figcaption>step 1. It should look something like this. if u are unsure if u are in the right folder type:
+            <code>pwd</code> it stands
+            for (print working directory) it will show you were u are currently located
+        </figcaption>
+        <img src="images/gitStep1.png" alt="" width="400">
     </figure>
 
     <figure>
-        <figcaption>Step 2. Initialize git with <code>git init</code>. After u have initialized git you will get this message.</figcaption>
-    
+        <figcaption>Step 2. Initialize git with <code>git init</code>. After u have initialized git you will get this
+            message.</figcaption>
+
         <img src="images/gitStep2.png" alt="" width="400">
 
     </figure>
+
+    <figure>
+        <figcaption>Step 3. After you have created your file using the <code>touch</code> command type <code>ls</code>
+            to list the files in the current directory. You should now see the txt file you created.</figcaption>
+
+        <img src="images/gitStep3.png" alt="" width="400">
+
+    </figure>
+
+    <figure>
+        <figcaption>Step 4. Copy the link in the first paragraf located second to bottom, it should look similar to this:
+            <code>git remote add origin https://github.com/Faads/gitTutorial.git</code> <br> Paste it in to the terminal
+            using <code>crtl + Shift + v</code> or right click and paste.</figcaption>
+        <img src="images/gitStep4.png" alt="" width="400">
+    </figure>
+
+<figure>
+    <figcaption>If u have followed the steps corretcly, you should se this when you type <code>git status</code></figcaption>
+    <img src="images/gitStep5.png" alt="" width="400">
+</figure>
+
 </body>
 
 </html>
