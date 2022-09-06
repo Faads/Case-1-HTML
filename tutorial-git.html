@@ -5,70 +5,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git tutorial</title>
+    <title>&#128374; Git tutorial &#128374;</title>
 </head>
 
-<body>
-    <h1>Git tutorial </h1>
+<nav>
+    <nav>
+        <ul>
+            <li><a href="gallery.html">Galleri</a></li>
+            <li><a href="event.html">Evenemang</a></li>
+            <li><a href="index.html">Om mig</a></li>
+        </ul>
+    </nav>
 
-    <p>In this tutorial i will showcase how to iniate git, commit, add branch and to push. I will assume u know how to
-        cretae a repository. if not here is a <a href="https://docs.github.com/en/get-started/quickstart/create-a-repo"
-            target="_blank">tutorial</a></p>
+    <hr>
+
+    <body>
+        <h1>Git tutorial &#128374;The terminal way &#128374;</h1>
+
+        <p>This tutorial will showcase how to iniate git, commit, add a origin and to push to github. I will assume u
+            know
+            how to
+            cretae a repository. if not here is a <a
+                href="https://docs.github.com/en/get-started/quickstart/create-a-repo" target="en_blank">tutorial</a>
+        </p>
 
 
 
-    <ul>
-        <li>steps
-            <ol>
-                <li>Navigate using a terminal to the folder u would like to iniate git. u navigated using
-                    <code>cd</code> it stands for (change directoy)
-                </li>
-                <li>Type <code>git init</code> This will initialize git in the folder u are currently located.</li>
-                <li>Create a file using <code>touch</code> followed buy a file name exampel: <code>touch test.txt</code> This
-                    will create an empty text file named "test.txt" that we will use to push to github.</li>
-                <li>Now you need to go to github and open the repository you created and copy the link showcased below.
-                    The link will look different for everyone but it should look simular to mine</li>
-                    <li>Type <code>git add </code> followed buy your file name (press tab to autocomplete text) and press enter. Then type <code>git status</code> to check the current status of your file and it should look like this.</li>
-            </ol>
-        </li>
-    </ul>
 
-    <figure>
-        <figcaption>step 1. It should look something like this. if u are unsure if u are in the right folder type:
-            <code>pwd</code> it stands
-            for (print working directory) it will show you were u are currently located
-        </figcaption>
-        <img src="images/gitStep1.png" alt="" width="400">
-    </figure>
+        <figure>
+            <figcaption>step 1. Open a terminal, either in <b>VS code</b> or any other code editor that has a built in
+                terminal, or open <b>Bash</b>. You need a folder that is either empty or contains files you would like
+                to push to github. You can either create one with
+                <code>mkdir gitTest</code> This will create an empty folder named <i>gitTest</i> or Navigate to the
+                folder u
+                would like to iniate git in. You navigated using
+                <code>cd</code> it stands for (change directoy). The text after the <code>~</code> sign inicates your
+                location.If you are still unsure of where you are located type <code>pwd</code> it stands for (print
+                working directory) this will show you were you are located.
 
-    <figure>
-        <figcaption>Step 2. Initialize git with <code>git init</code>. After u have initialized git you will get this
-            message.</figcaption>
+            </figcaption>
+            <img src="images/gitStep1.png" alt="" width="400">
+        </figure>
 
-        <img src="images/gitStep2.png" alt="" width="400">
+        <figure>
+            <figcaption>Step 2. Initialize git with <code>git init</code>. After u have initialized git you will get
+                this
+                message.</figcaption>
 
-    </figure>
+            <img src="images/gitStep2.png" alt="" width="400">
 
-    <figure>
-        <figcaption>Step 3. After you have created your file using the <code>touch</code> command type <code>ls</code>
-            to list the files in the current directory. You should now see the txt file you created.</figcaption>
+        </figure>
 
-        <img src="images/gitStep3.png" alt="" width="400">
+        <figure>
+            <figcaption>Step 3. Create a file using <code>touch</code> followed buy a file name exampel:
+                <code>touch test.txt</code> This
+                will create an empty text file named "test.txt" that we will use to push to github. After you have
+                created your file, type <code>ls</code>
+                to list the files in the current directory. You should now see the txt file you created.
+            </figcaption>
 
-    </figure>
+            <img src="images/gitStep3.png" alt="" width="400">
 
-    <figure>
-        <figcaption>Step 4. Copy the link in the first paragraf located second to bottom, it should look similar to this:
-            <code>git remote add origin https://github.com/Faads/gitTutorial.git</code> <br> Paste it in to the terminal
-            using <code>crtl + Shift + v</code> or right click and paste.</figcaption>
-        <img src="images/gitStep4.png" alt="" width="400">
-    </figure>
+        </figure>
 
-<figure>
-    <figcaption>If u have followed the steps corretcly, you should se this when you type <code>git status</code></figcaption>
-    <img src="images/gitStep5.png" alt="" width="400">
-</figure>
+        <figure>
+            <figcaption>Step 4.Now you need to go to github and open the repository you created. Copy the link in the
+                first paragraf located second to bottom on github. The link will look different for everyone but it
+                should look
+                simular to this:
+                this: <code>git remote add origin https://github.com/Faads/gitTutorial.git</code> <br> Paste it in the
+                terminal
+                using <code>crtl + Shift + v</code> or right click and paste.
+            </figcaption>
+            <img src="images/gitStep4.png" alt="" width="400">
+        </figure>
 
-</body>
+        <figure>
+            <figcaption>Step 5. Type <code>git add </code> followed buy your file name so for me its
+                <code>git add test.txt</code> (press tab to autocomplete text) and press
+                enter.
+                Then type <code>git status</code> to check the current status of your file. If u have followed the steps
+                corretcly, you should se this when you type
+                <code>git status</code>
+            </figcaption>
+            <img src="images/gitStep5.png" alt="" width="400">
+        </figure>
+
+        <figure>
+            <figcaption>Step 6. Time for your first commit, how exiting &#128513; type
+                <code>git commit -m "any messsage you would like"</code> thats it you have now commited your file.
+            </figcaption>
+            <img src="images/gitStep6.png" alt="" width="400">
+        </figure>
+
+        <figure>
+            <figcaption>Step 7. The last step is to push your work to github. type <code>git push -u origin main</code>
+                and the following will appear on your terminal:(some of you will have to type your password to git and
+                it will leave you with a error message after you type it in, you need a personal acsses token, here is a
+                <a
+                    href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token" target="_blank">tutorial</a> 
+                   on how to do that) </figcaption>
+            <img src="images/gitStep7.png" alt="" width="400">
+        </figure>
+
+        <p>When you open your repository you will see your files and the message tou typed in your commit.</p>
+
+
+        <h3>You did it! You are now a certified giter&#128526; </h3>
+
+        <!-- this is the sunglasses emoji &#128526; uae it later! -->
+
+
+
+    </body>
 
 </html>
